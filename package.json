@@ -1,0 +1,35 @@
+{
+  "name": "@go-pkg-org/website",
+  "version": "1.0.0",
+  "description": "gopkg.org website",
+  "private": true,
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/go-pkg-org/website.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/go-pkg-org/website/issues"
+  },
+  "homepage": "https://github.com/go-pkg-org/website#readme",
+  "dependencies": {
+    "@tailwindcss/ui": "^0.6.2",
+    "autoprefixer": "^10.0.1",
+    "next": "^10.0.0",
+    "postcss-flexbugs-fixes": "^4.2.1",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "^2.1.2",
+    "react": "^17.0.1",
+    "react-classed": "^1.1.0",
+    "react-dom": "^17.0.1",
+    "semistandard": "^15.0.0",
+    "swr": "^0.3.7",
+    "tailwindcss": "^1.9.6"
+  }
+}
