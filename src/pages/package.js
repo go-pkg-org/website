@@ -70,7 +70,7 @@ export default function PackagePage() {
                       </div>
                     </div>
                     <div>
-                      <ul className="ml-5">
+                      <ul className="mt-1">
                         <li>
                           <Icon.Check
                             color="green"
