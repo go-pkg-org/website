@@ -64,14 +64,11 @@ export default function TrackerPage() {
   const { data, error } = useSWR('https://archive.gopkg.org/index.json');
   const [query, setQuery] = useState('');
 
-  if (error) return <div>failed to load</div>;
-  if (!data) return <div>loading...</div>;
-
   return (
     <div class="relative overflow-hidden">
       <div class="max-w-screen-xl mx-auto">
         <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:w-full lg:pb-20 xl:pb-20">
-          <main class="mt-10 mx-auto max-w-screen-xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+          <div class="mt-10 mx-auto max-w-screen-xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
             <div class="md:flex md:items-center md:justify-between">
               <div class="flex-1 min-w-0">
                 <h2 class="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:leading-none">
@@ -104,8 +101,18 @@ export default function TrackerPage() {
               </div>
             </div>
 
-            <Table query={query} packages={data.Packages} />
-          </main>
+            {error && (
+              <p className="mt-10 text-base leading-6 text-gray-500">
+                Failed to load packages.
+              </p>
+            )}
+            {!error && !data && (
+              <p className="mt-10 text-base leading-6 text-gray-500">
+                Loading...
+              </p>
+            )}
+            {!error && data && <Table query={query} packages={data.Packages} />}
+          </div>
         </div>
       </div>
     </div>
