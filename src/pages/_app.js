@@ -2,9 +2,9 @@ import '../styles/index.css';
 import { InfoBar, NavBar } from '../components';
 
 const Footer = () => (
-  <div class="bg-white overflow-hidden bottom border-t border-gray-200 lg:mt-20">
+  <div class="bg-white overflow-hidden bottom border-t border-gray-200 mt-20">
     <div class="max-w-screen-xl mx-auto mt-10">
-      <div class="relative z-10 pb-8 bg-white lg:max-w-2xl lg:w-full sm:mt-5 sm:max-w-xl sm:mx-auto md:mt-5 lg:mx-0">
+      <div class="relative z-10 pb-8 bg-white mx-auto px-4 sm:px-6 lg:px-8">
         <h3 class="text-xl tracking-tight leading-10 font-extrabold text-gray-900 sm:leading-none">
           Gopkg
         </h3>
