@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import { Icon } from '../components';
 
 const Hero = ({
@@ -48,7 +49,7 @@ const Hero = ({
 
 const Features = () => {
   return (
-    <div class=" bg-white">
+    <div class="bg-white">
       <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         {false && (
           <div class="lg:text-center">
@@ -150,6 +151,9 @@ const Features = () => {
 export default function IndexPage() {
   return (
     <div>
+      <Head>
+        <title>Gopkg</title>
+      </Head>
       <Hero />
       <Features />
     </div>
