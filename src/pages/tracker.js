@@ -32,7 +32,7 @@ const Table = ({ query = '', packages = {} }) => {
               </thead>
               <tbody class="bg-white divide-y divide-gray-200">
                 {names.map((name, index) => (
-                  <tr>
+                  <tr key={`table-row-${index}`}>
                     <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
                       <Link href={`/package/${name}`}>
                         <a className="text-blue-500 hover:underline">{name}</a>
