@@ -101,18 +101,18 @@ export default function Navbar() {
               ))}
             </div>
           </div>
-          <div class="flex-1 flex items-center justify-center px-2 lg:ml-6 lg:justify-end">
-            <div class="max-w-lg w-full lg:max-w-xs">
-              <label for="search" class="sr-only">
+          <div className="flex-1 flex items-center justify-center px-2 lg:ml-6 lg:justify-end">
+            <div className="max-w-lg w-full lg:max-w-xs">
+              <label for="search" className="sr-only">
                 Search packages
               </label>
-              <div class="relative">
-                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+              <div className="relative">
+                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                   <Icon.Search size={20} className="text-gray-400" />
                 </div>
                 <input
                   id="search"
-                  class="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md leading-5 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:border-blue-300 focus:shadow-outline-blue sm:text-sm transition duration-150 ease-in-out"
+                  className="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md leading-5 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:border-blue-300 focus:shadow-outline-blue sm:text-sm transition duration-150 ease-in-out"
                   placeholder="Search packages"
                   type="search"
                 />
@@ -120,9 +120,9 @@ export default function Navbar() {
             </div>
           </div>
 
-          <div class="-mr-2 flex items-center sm:hidden">
+          <div className="-mr-2 flex items-center sm:hidden">
             <button
-              class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
               aria-label="Main menu"
               aria-expanded="false"
               onClick={() => setOpen(!open)}
